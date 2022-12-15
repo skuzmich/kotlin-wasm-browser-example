@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kotlin/Wasm</title>
+</head>
+<body>
+<script>
+    function consoleLogExample() {
+        console.log("Hello");
+    }
+
+    let externalInt = 0;
+
+    let Counter = {
+        value: 0,
+        step: 1,
+        increment() { this.value += this.step; }
+    };
+
+    class Rectangle {
+        constructor(height, width) {
+            this.height = height;
+            this.width = width;
+        }
+        get area() {
+            return this.calcArea();
+        }
+        calcArea() {
+            return this.height * this.width;
+        }
+    }
+
+</script>
+<script type="application/ecmascript" src="wasm-example.js"></script>
+<p>Make sure to use Chrome Canary (unstable) for this sample.</p>
+</body>
+</html>
