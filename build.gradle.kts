@@ -1,14 +1,13 @@
 import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackConfig
 
 plugins {
-    kotlin("multiplatform") version "1.8.20-dev-4608"
+    kotlin("multiplatform") version "1.9.0-dev-1"
 }
 
 version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
-    maven("https://maven.pkg.jetbrains.space/kotlin/p/kotlin/dev")
     maven("https://maven.pkg.jetbrains.space/kotlin/p/wasm/experimental")
 }
 
@@ -32,7 +31,7 @@ kotlin {
     sourceSets {
         val wasmMain by getting {
             dependencies {
-                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4-wasm0")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4-wasm3")
                 implementation("org.jetbrains.kotlinx:atomicfu:0.18.5-wasm0")
             }
         }
