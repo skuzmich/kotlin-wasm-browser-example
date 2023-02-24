@@ -22,3 +22,5 @@
 .idea/**/dbnavigator.xml
 
 /build/
+
+.idea
