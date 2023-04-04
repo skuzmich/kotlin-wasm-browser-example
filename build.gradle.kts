@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackConfig
 
 plugins {
-    kotlin("multiplatform") version "1.9.0-dev-1"
+    kotlin("multiplatform") version "1.8.20"
 }
 
 version = "1.0-SNAPSHOT"
@@ -31,7 +31,7 @@ kotlin {
     sourceSets {
         val wasmMain by getting {
             dependencies {
-                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4-wasm3")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.0-Beta-wasm0")
                 implementation("org.jetbrains.kotlinx:atomicfu:0.18.5-wasm0")
             }
         }
