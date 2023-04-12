@@ -1,5 +1,8 @@
-# Kotlin/Wasm browser example
+# Kotlin/Wasm Node.js example
 
 **Warning : highly experimental status**
 
-Use Google Chrome Canary for this sample with `chrome://flags/#enable-webassembly-garbage-collection` enabled.
+Running:
+```
+./gradlew wasmNodeRun
+```
